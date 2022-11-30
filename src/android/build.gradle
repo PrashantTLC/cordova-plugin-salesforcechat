@@ -4,9 +4,11 @@ allprojects {
     jcenter()
     maven {
       url 'https://s3.amazonaws.com/salesforcesos.com/android/maven/release'
+      allowInsecureProtocol = true
     }
     maven {
       url 'https://jfrog.bintray.com/maven/'
+      allowInsecureProtocol = true
     }
   }
 }
